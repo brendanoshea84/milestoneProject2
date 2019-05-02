@@ -1,0 +1,85 @@
+/*--------------------------Play Area--------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.playArea {
+    width: 100vw;
+    height: 100vh; 
+    background-image: url(../images/back.png);
+    padding-top: 20px;
+}
+
+/*--------------------------Option and settings--------------------*/
+
+#roundBox,
+#timeBox {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 5px;
+    border: solid 2px black;
+    padding: 0;
+    display: table;
+    margin: auto;
+}
+
+.settingArea {
+    padding-left: 30px; 
+}
+
+
+/*--------------------------Cards--------------------*/
+
+.gameArea {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 750px;
+}
+.card {
+    height: 230px;
+    width: 30%;
+    border: solid 2px black;
+    position: relative;
+    padding: 0;
+    margin: 10px;
+    border-radius: 10px;
+} 
+
+.frontCard {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../images/cardBack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+}
+
+.backCard {
+    /*--background: #78C2AD;--*/
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.hardMode {
+    display: none;
+    
+}
+
+.medMode {
+    display: none;
+}
+
+/*--------------------------buttons--------------------*/
+.btn {
+    width: 25%;
+    margin: 10px;
+}
