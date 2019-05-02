@@ -1,33 +1,41 @@
+var finishingRound;
+var cardHighLight;
+var activeCards;
+var roundNumber = 1;
+var beginnerMode = true;
+var startingCards;
+var cardOrder;
 
-let finishingRound;
-let cardHighLight;
-let activeCards;
-let roundNumber = 1;
-let beginnerMode = true;
+var cards = document.querySelectorAll('.card');
 
 //modes
 
 if(beginnerMode === true) {
-    let startingCards = 3 + (floor.Math(3 % roundNumber()));
+    startingCards = 2 + (Math.floor(roundNumber % 3));
+
     cardHighLight = true;
     activeCards = true;
 };
 
-    
-
-//game card order for all modes
-const cardOrder = [];
+    //game card order for all modes
+cardOrder = [];
 for (var i = 1; i <= 25; i++) {
     cardOrder.push(i);
 }
 console.log(cardOrder);
 console.log(startingCards);
 
+
+
+//shuffle cards
+(function shuffle() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 9);
+    card.style.order = randomPos;
+  });
+})();
+
 //Player pressing the cards
 
-
-function shuffle() {
-    cards.forEach(card => {
-      let randomPos = Math.floor(Math.random() * 12);
-      card.style.order = randomPos;
-    });
+function addEventListener('click', cards) 
+  console.log(data);
