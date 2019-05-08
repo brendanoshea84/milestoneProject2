@@ -7,6 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Memory Game</title>
 
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="static/css/style.css" type="text/css" />
     <!-- <script rel="stylesheet" href="static/js/script.js" type="text/javascript" /> -->
@@ -20,7 +31,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">B's Memory Game</a>
-        </div>
+
     </nav>
 
     <!--Playing area-->
@@ -29,203 +40,209 @@
 
             <!--Settings and Option area-->
             <div class="col-12 col-md-4 text-center settingArea">
-
-                
-            </div>
-
-
-
-
-
-
-            <!--Game and Card area-->
-            <div class="col-12 col-md-8">
-                <div class="gameArea">
-
-                    <div class=" card easyMode" data ="1">
-                        <div class="frontCard">
-                            <p>1</p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-                    <div class=" card easyMode" data ="2">
-                        <div class="frontCard">
-                            <p>2</p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-                    <div class=" card easyMode" data="3">
-                        <div class="frontCard">
-                            <p>3</p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-                    <div class=" card medMode" data="10">
-                        <div class="frontCard">
-                            <p></p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-                    <div class=" card hardMode" data="17">
-                        <div class="frontCard">
-                            <p></p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-
-
-                    <div class=" card easyMode" data="4">
-                        <div class="frontCard">
-                            <p>4</p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-                    <div class=" card easyMode" data="5">
-                        <div class="frontCard">
-                            <p>5</p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-                    <div class=" card easyMode" data="6">
-                        <div class="frontCard">
-                            <p>6</p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-                    <div class=" card medMode" data="11">
-                        <div class="frontCard">
-                            <p></p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-                    <div class=" card hardMode" data="18">
-                        <div class="frontCard">
-                            <p></p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-
-
-                    <div class=" card easyMode" data="7">
-                        <div class="frontCard">
-                            <p>7</p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-                    <div class=" card easyMode" data="8">
-                        <div class="frontCard">
-                            <p>8</p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-                    <div class=" card easyMode" data="9">
-                        <div class="frontCard">
-                            <p>9</p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-                    <div class=" card medMode" data="12">
-                        <div class="frontCard">
-                            <p>12</p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-                    <div class=" card hardMode" data="19">
-                        <div class="frontCard">
-                            <p>19</p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-
-
-                    <div class=" card medMode" data="13">
-                        <div class="frontCard">
-                            <p>13</p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-                    <div class=" card medMode" data="14">
-                        <div class="frontCard">
-                            <p>14</p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-                    <div class=" card medMode" data="15">
-                        <div class="frontCard">
-                            <p></p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-                    <div class=" card medMode" data="16">
-                        <div class="frontCard">
-                            <p></p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-                    <div class=" card hardMode" data="20">
-                        <div class="frontCard">
-                            <p></p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-
-
-                    <div class="card hardMode" data="21">
-                        <div class="frontCard">
-                            <p></p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-                    <div class=" card hardMode" data="22">
-                        <div class="frontCard">
-                            <p></p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-                    <div class=" card hardMode" data="23">
-                        <div class="frontCard">
-                            <p></p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-                    <div class=" card hardMode" data="24">
-                        <div class="frontCard">
-                            <p></p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-                    <div class=" card hardMode" data="25">
-                        <div class="frontCard">
-                            <p></p>
-                        </div>
-                        <div class="backCard"></div>
-                    </div>
-
-
+                <div class="row">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="beginnerButton">Beginner</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="mediumButton">Medium</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="hardButton">Hard</button>
                 </div>
             </div>
-        </div>
-        <br />
-        <!--Start game button-->
-        <div class="row">
-            <div class="col-12 text-center">
-                <button type="button" class="btn btn-primary btn-lg btn-block" id="startButton">Start</button>
+
+
+      
+
+
+        <!--Game and Card area-->
+        <div class="col-12 col-md-8">
+            <div class="gameArea">
+
+                <div class="card easyMode" data-cardNumber="1">
+                    <div class="frontCard">
+                        <p>1</p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+                <div class="card easyMode" data-cardNumber="2">
+                    <div class="frontCard">
+                        <p>2</p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+                <div class="card easyMode" data-cardNumber="3">
+                    <div class="frontCard">
+                        <p>3</p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+                <div class=" card medMode" data-cardNumber="10">
+                    <div class="frontCard">
+                        <p></p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+                <div class=" card hardMode" data-cardNumber="17">
+                    <div class="frontCard">
+                        <p></p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+
+
+                <div class=" card easyMode" data-cardNumber="4">
+                    <div class="frontCard">
+                        <p>4</p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+                <div class=" card easyMode" data-cardNumber="5">
+                    <div class="frontCard">
+                        <p>5</p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+                <div class=" card easyMode" data-cardNumber="6">
+                    <div class="frontCard">
+                        <p>6</p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+                <div class=" card medMode" data-cardNumber="11">
+                    <div class="frontCard">
+                        <p></p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+                <div class=" card hardMode" data-cardNumber="18">
+                    <div class="frontCard">
+                        <p></p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+
+
+                <div class=" card easyMode" data-cardNumber="7">
+                    <div class="frontCard">
+                        <p>7</p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+                <div class=" card easyMode" data-cardNumber="8">
+                    <div class="frontCard">
+                        <p>8</p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+                <div class=" card easyMode" data-cardNumber="9">
+                    <div class="frontCard">
+                        <p>9</p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+                <div class=" card medMode" data-cardNumber="12">
+                    <div class="frontCard">
+                        <p>12</p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+                <div class=" card hardMode" data-cardNumber="19">
+                    <div class="frontCard">
+                        <p>19</p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+
+
+                <div class=" card medMode" data-cardNumber="13">
+                    <div class="frontCard">
+                        <p>13</p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+                <div class=" card medMode" data-cardNumber="14">
+                    <div class="frontCard">
+                        <p>14</p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+                <div class=" card medMode" data-cardNumber="15">
+                    <div class="frontCard">
+                        <p></p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+                <div class=" card medMode" data-cardNumber="16">
+                    <div class="frontCard">
+                        <p></p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+                <div class=" card hardMode" data-cardNumber="20">
+                    <div class="frontCard">
+                        <p></p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+
+
+                <div class="card hardMode" data-cardNumber="21">
+                    <div class="frontCard">
+                        <p></p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+                <div class=" card hardMode" data-cardNumber="22">
+                    <div class="frontCard">
+                        <p></p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+                <div class=" card hardMode" data-cardNumber="23">
+                    <div class="frontCard">
+                        <p></p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+                <div class=" card hardMode" data-cardNumber="24">
+                    <div class="frontCard">
+                        <p></p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+                <div class=" card hardMode" data-cardNumber="25">
+                    <div class="frontCard">
+                        <p></p>
+                    </div>
+                    <div class="backCard"></div>
+                </div>
+
+
             </div>
         </div>
+    </div>
+    <br />
+    <!--Start game button-->
+    <div class="row">
+        <div class="col-12 text-center">
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="startButton">Start</button>
+        </div>
+    </div>
     </div>
 
 
@@ -236,15 +253,6 @@
 
 </body>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
 <script src="static/js/script.js"></script>
 
 

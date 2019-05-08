@@ -5,8 +5,18 @@ var roundNumber = 1;
 var beginnerMode = true;
 var startingCards;
 var cardOrder;
+var playerOrder;
+
 
 var cards = document.querySelectorAll('.card');
+cards.forEach(card => card.addEventListener('click', turnCard));
+
+function turnCard () {
+  this.classList.toggle('flip');
+firstCard= this;
+
+  console.log(Card.dataset.cardNumber);
+}
 
 //modes
 
@@ -15,7 +25,7 @@ if(beginnerMode === true) {
 
     cardHighLight = true;
     activeCards = true;
-};
+}
 
     //game card order for all modes
 cardOrder = [];
@@ -35,7 +45,5 @@ console.log(startingCards);
   });
 })();
 
-//Player pressing the cards
 
-function addEventListener('click', cards) 
-  console.log(data);
+//Player pressing the cards

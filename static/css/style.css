@@ -48,7 +48,21 @@
     padding: 0;
     margin: 10px;
     border-radius: 10px;
+    transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+
 } 
+
+.card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+  
+  .card.flip {
+    transform: rotateY(180deg);
+  }
 
 .frontCard {
     width: 100%;
@@ -59,6 +73,7 @@
     background-size: cover;
     border-radius: 10px;
     background-position: center;
+    backface-visibility: hidden;
 }
 
 .backCard {
@@ -67,6 +82,7 @@
     height: 100%;
     position: absolute;
     border-radius: 10px;
+    backface-visibility: hidden;
 }
 
 .hardMode {
